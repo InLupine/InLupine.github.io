@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-js-input.html</title>
+    <script>
+        function Show_output() {
+            //document.write("hello")
+            //document.write(document.getElementById("text1").value)
+            document.getElementById("output").innerHTML =document.getElementById("text1").value
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="text1">
+    <br><br>
+    <input type="button" value="Submit" onclick="Show_output()">
+    <br><br>
+    <p id = "output"></p>
+</body>
+</html>
