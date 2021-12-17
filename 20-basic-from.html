@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20-basic-from.html</title>
+    <script>
+        function display_data() {
+            let display_sid = document.forms["myFrom"]["sid"].value
+        }
+    </script>
+</head>
+<body>
+    <form name="maForm" action="" method="post" onsubmit="display_data()" > 
+        <table border="1">
+            <tr>
+                <td>รหัสนักศึกษา :</td>
+                <td><input type="text" name="sid" id="sid"></td>
+            </tr>
+            <tr>
+                <td>ชื่อ-สกุล :</td>
+                <td><input type="text" name="sname" id="sname"></td>
+            </tr>
+            <tr>
+                <td>หมายเลขโทรศัพท์ :</td>
+                <td><input type="text" name="phone" id="phone"></td>
+            </tr>
+        </table>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>
